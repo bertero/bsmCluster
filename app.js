@@ -36,16 +36,16 @@ serverFunctions.startServer(function(){
 	// }, cbTimer)
 
 
-	var arr = []
-	for(var i = 0; i<9999999; i++) arr.push(i)
-	async.eachSeries(arr, function(iteree, cb){
-	  var url = 'http://bit.ly/28JgS7t'
-	  request.get(url, null, function(err, body, res){
-	    log('err: ' + err);log('status: ' + body.statusCode);
-	    var cbTimer = Number(Math.round(Math.random()*20000))
-	    log(cbTimer/1000)
-	    setTimeout(cb, cbTimer)
-	  })
-	}, function(){ log('done') })
+	// var arr = []
+	// for(var i = 0; i<9999999; i++) arr.push(i)
+	// async.eachSeries(arr, function(iteree, cb){
+	//   var url = 'http://bit.ly/28JgS7t'
+	//   request.get(url, null, function(err, body, res){
+	//     log('err: ' + err);log('status: ' + body.statusCode);
+	//     var cbTimer = Number(Math.round(Math.random()*20000))
+	//     log(cbTimer/1000)
+	//     setTimeout(cb, cbTimer)
+	//   })
+	// }, function(){ log('done') })
 
 })

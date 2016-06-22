@@ -25,7 +25,6 @@ serverFunctions.startServer(function(){
  //  	cbTimer = Number(Math.round(Math.random()*20000))
  //  }, 500)
 
-
 	// setInterval(function(){
 	// 	var url = 'http://bit.ly/28JgS7t'
 	//   request.get(url, null, function(err, body, res){
